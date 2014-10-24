@@ -1,0 +1,59 @@
+Microsoft eMbedded Visual Tools Workspace File, Format Version 4.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "SPIDMALibDemo_Lib"=.\SPIDMALibDemo_Lib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SPIDMALib_Lib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DmaLib_Lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SPIDMALib_Dll"=..\..\libs\prj\SPILib\SPIDMALib_Dll.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SPIDMALib_Lib"=..\..\libs\prj\SPILib\SPIDMALib_Lib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

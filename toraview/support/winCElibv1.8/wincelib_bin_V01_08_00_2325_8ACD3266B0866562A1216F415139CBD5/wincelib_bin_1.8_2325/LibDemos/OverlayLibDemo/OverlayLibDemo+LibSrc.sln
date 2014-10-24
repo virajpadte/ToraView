@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OverlayLibDemo", "OverlayLibDemo.vcproj", "{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654} = {1D14EF09-A13E-4FDC-BE84-F4FAF266A654}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OverlayLib_Lib", "..\..\libs\prj\OverlayLib\OverlayLib_Lib.vcproj", "{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OverlayLib_Dll", "..\..\libs\prj\OverlayLib\OverlayLib_Dll.vcproj", "{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654} = {1D14EF09-A13E-4FDC-BE84-F4FAF266A654}
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397} = {17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Colibri600 (ARMV4I) = Debug|Colibri600 (ARMV4I)
+		Debug|Toradex_CE500 (ARMV4I) = Debug|Toradex_CE500 (ARMV4I)
+		Debug|Toradex_CE600 (ARMV4I) = Debug|Toradex_CE600 (ARMV4I)
+		Release|Colibri600 (ARMV4I) = Release|Colibri600 (ARMV4I)
+		Release|Toradex_CE500 (ARMV4I) = Release|Toradex_CE500 (ARMV4I)
+		Release|Toradex_CE600 (ARMV4I) = Release|Toradex_CE600 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Colibri600 (ARMV4I).Deploy.0 = Debug|Colibri600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Toradex_CE500 (ARMV4I).ActiveCfg = Debug|Toradex_CE500 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Toradex_CE500 (ARMV4I).Build.0 = Debug|Toradex_CE500 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Toradex_CE500 (ARMV4I).Deploy.0 = Debug|Toradex_CE500 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Toradex_CE600 (ARMV4I).ActiveCfg = Debug|Toradex_CE600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Toradex_CE600 (ARMV4I).Build.0 = Debug|Toradex_CE600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Debug|Toradex_CE600 (ARMV4I).Deploy.0 = Debug|Toradex_CE600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Colibri600 (ARMV4I).Deploy.0 = Release|Colibri600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Toradex_CE500 (ARMV4I).ActiveCfg = Release|Toradex_CE500 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Toradex_CE500 (ARMV4I).Build.0 = Release|Toradex_CE500 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Toradex_CE500 (ARMV4I).Deploy.0 = Release|Toradex_CE500 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Toradex_CE600 (ARMV4I).ActiveCfg = Release|Toradex_CE600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Toradex_CE600 (ARMV4I).Build.0 = Release|Toradex_CE600 (ARMV4I)
+		{17D14C1A-AF9E-49F5-A608-1EC8C9AF8397}.Release|Toradex_CE600 (ARMV4I).Deploy.0 = Release|Toradex_CE600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Debug|Toradex_CE500 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Debug|Toradex_CE600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Release|Colibri600 (ARMV4I).Deploy.0 = Release|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Release|Toradex_CE500 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{1D14EF09-A13E-4FDC-BE84-F4FAF266A654}.Release|Toradex_CE600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Debug|Toradex_CE500 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Debug|Toradex_CE600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Release|Colibri600 (ARMV4I).Deploy.0 = Release|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Release|Toradex_CE500 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{94F8A9AE-893B-4D3F-876B-20BC410CBFA7}.Release|Toradex_CE600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

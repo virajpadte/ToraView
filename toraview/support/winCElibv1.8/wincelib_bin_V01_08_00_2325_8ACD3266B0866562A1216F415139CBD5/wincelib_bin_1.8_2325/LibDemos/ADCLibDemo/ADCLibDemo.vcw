@@ -1,0 +1,56 @@
+Microsoft eMbedded Visual Tools Workspace File, Format Version 4.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "ADCLibDemo_Lib"=.\ADCLibDemo_Lib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ADCLib_Lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ADCLib_Dll"=..\..\libs\prj\ADCLib\ADCLib_Dll.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ADCLib_Lib"=..\..\libs\prj\ADCLib\ADCLib_Lib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

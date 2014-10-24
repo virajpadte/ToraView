@@ -1,0 +1,68 @@
+Microsoft eMbedded Visual Tools Workspace File, Format Version 4.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "SysInfoLibDemo_Dll"=.\SysInfoLibBasic_DllDemo.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SysInfoLib_Dll"=..\..\libs\prj\SysInfoLib\SysInfoLib_Dll.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SysInfoLib_Lib"=..\..\libs\prj\SysInfoLib\SysInfoLib_Lib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SysInfoLib_LibDemo"=.\SysInfoLib_LibDemo.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name SysInfoLib_Lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

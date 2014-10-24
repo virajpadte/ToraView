@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "I2cLib_DllDemo", "I2cLib_DllDemo.vcproj", "{96A62B18-A3BF-4CE0-A9E9-CAD6AEB43548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Colibri600 (ARMV4I) = Debug|Colibri600 (ARMV4I)
+		Release|Colibri600 (ARMV4I) = Release|Colibri600 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96A62B18-A3BF-4CE0-A9E9-CAD6AEB43548}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{96A62B18-A3BF-4CE0-A9E9-CAD6AEB43548}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{96A62B18-A3BF-4CE0-A9E9-CAD6AEB43548}.Debug|Colibri600 (ARMV4I).Deploy.0 = Debug|Colibri600 (ARMV4I)
+		{96A62B18-A3BF-4CE0-A9E9-CAD6AEB43548}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{96A62B18-A3BF-4CE0-A9E9-CAD6AEB43548}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{96A62B18-A3BF-4CE0-A9E9-CAD6AEB43548}.Release|Colibri600 (ARMV4I).Deploy.0 = Release|Colibri600 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

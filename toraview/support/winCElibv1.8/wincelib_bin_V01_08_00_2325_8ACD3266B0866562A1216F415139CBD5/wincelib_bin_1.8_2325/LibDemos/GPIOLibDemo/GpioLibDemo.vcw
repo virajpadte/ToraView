@@ -1,0 +1,56 @@
+Microsoft eMbedded Visual Tools Workspace File, Format Version 4.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "GpioLibDemo_Lib"=.\GpioLibDemo_Lib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name GpioLib_Lib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "GpioLib_Dll"=..\..\libs\prj\GpioLib\GpioLib_Dll.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GpioLib_Lib"=..\..\libs\prj\GpioLib\GpioLib_Lib.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

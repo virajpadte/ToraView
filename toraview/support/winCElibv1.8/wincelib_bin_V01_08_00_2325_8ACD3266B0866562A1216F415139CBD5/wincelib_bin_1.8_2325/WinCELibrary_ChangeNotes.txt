@@ -1,0 +1,260 @@
+Toradex Windows CE Library - Change Notes
+-----------------------------------------
+
+Use of this software is subject to an End user License Agreement
+which can be viewed here: 
+
+http://docs.toradex.com/100286-toradex-end-user-license-agreement.pdf
+
+
+
+Current Library Version: V1.8.0
+
+
+Contents:
+
+
+Directory  |  Contents                                              |
+-----------+--------------------------------------------------------+
+           |                                                        |
+libDemos   |  Demos and example source code                         |
+           |                                                        |
+inc        |  Library and Library support header files              |
+           |                                                        |
+libs/dll   |  Debug and Release versions of libraries in DLL format |
+           |                                                        |
+libs/lib   |  Debug and Release versions of libraries in lib format |
+           |                                                        |
+-----------+--------------------------------------------------------+
+
+
+Library Versions:
+
+ADCLib          V2.1.2
+
+CANLib-SJ1000   V3.3.2
+
+CANLib-MCP2515  V1.8.0
+
+CLKLib          V3.3.0
+
+CLOUDLib        V1.0.2
+
+COPROCLib       V2.2.0
+
+DMALIb          V1.3.1
+
+FREQLib         V2.2.0
+
+GPIOLib         V2.3.0
+
+I2CLib          V4.2.0
+
+IMGINFOLib      V1.4.0
+
+INTLib          V2.4.0
+
+MAPREGLib       V1.3.0
+
+MEMLib          V1.0.1
+
+OVERLAYLib      V0.2.1
+
+PWMLib          V2.1.2
+
+SPIDMALib       V5.2.0
+
+SPILib          V5.2.0
+
+STOREMGRLib     V2.0.0
+
+SYSINFOLib      V1.4.0
+
+UPDATELib       V1.7.0
+
+WATCHDOGLib     V1.0.0
+
+
+
+Revision History:
+
+09-07-2014  V1.8.0
+- FreqLib          Added function TegFrq_Boost()
+                   This function allows to dynamically set the minimum required system frequencies
+                   
+- McpCanLib        Minor performance improvement in SetMode()
+                   Remove unused declarations and code from mcp2515.h and mcp2515.c
+                   Removed dependency to IsrDll.dll. IsrDll.dll is not required anymore
+                   Support for two coexistent MCP2515 controllers
+                   Fix wrong parameter validation for parameter "device" in various functions
+                   Fix McpCanLib for PXA procesors
+                   Fix wrong generation of CAN IDs when transmitting a message
+
+- i2cLib           Fix i2c protocol in I2CBurstRead() for T20 and T30: 
+                   Do not send STOP condition after transmitting the offset value.
+
+
+27-05-2014  V1.7.0
+
+- SPIDMALib         Non-standard SPI pin configurations can now be defined as GPIO
+  SPILib            numbers instead of SODIMM pins. This is to support on-module SPI 
+                    channels, e.g. for the Apalis on-module CAN controllers
+                    Adjust default SPI pin configurations for Apalis
+
+- CANLib-MCP2515    Add support for Apalis on-board CAN interfaces
+                    For CAN device 0, use SPI1 on Colibri T30 (was SPI4)
+                    Fixed bug that caused Bit 23 of extended message IDs to be cleared to 0.
+
+- MapRegLib         VirtualSetAttributesCompat(): Add support for Tegra, but only 
+                    for BSP V1.3beta2 and later
+
+
+15-04-2014  V1.6.0
+
+- i2cLib            Internally mask slave address for the range 0..127
+
+- UpdateLib         Implement Bootloader Update for T30
+
+- SpiLib            Add TegSpiSetWaitMethod() to choose between interrput-driven and busyLoop waiting
+                    Use DMA-like SPI control method even in non-DMA mode to prevent possible data loss of received data.
+                    Remove deprecated functions TegWriteSPIUnpacdked() and TegReadSPIUnpacked()
+                    Fix issue that caused a data abort when calling SPIInit()) the 2nd time
+
+- CANLib-MCP2515    CANLibMCP2515TransmitMessage(): add timeout parameter
+                    Use SPI busy-loop polling to minimize latency
+                    Support 2nd CAN interface
+                    Fix wrong interpretation of function result in CANLibMCP2515Init()
+
+
+11-03-2014  V1.5.0
+
+- ClkLib            Prevent using non-constant clock sources PLLC and PLLM in function ClkLibSetClockFrequency()
+
+- CoprocLib         Add missing functions to DLL: GetSoCType() and getModuleFamily()
+                    Add functions to enable/disable/query SWP assembler instruction support
+                    Added CoprocLibDemo application
+
+- FreqLib           Fixed calculation of system frequencies (affected Colibri PXA modules only)
+
+- GpioLib           Improve support for Colibri T30 (InitGpioLibEx())
+                    Fixed issue with SODIMM pin 133 on Colibri T30
+
+- MapRegLib         Fix: AllocPhysMemCompat() did not work on old T20/T30 images
+
+- I2cLib            Fixed missing deinit of a variable for the T20/T30 modules in the I2CDeInit() function
+                    Added more error checks
+                    
+- SpiLib            Fix bit rate calculation
+                    Pre-allocate memory for DMA, instead of allocating it for each transfer
+                    Performance improvements
+                    Fix pin initialization
+                
+- SysInfoLib        fixed documentation of return values for SysInfoLibDeInit() and SaveUserData()
+                    Make sure that return value TRUE is represented as 1 in functions GetBoardVersion(), GetMACAddress(), SetMACAddress() and GetBoardSerial()
+
+- UpdateLib         Fixes in clear registry part
+                    Improved error reporting
+                    Modified UDLReboot to prevent system freezes when shutting down the system.
+                
+
+                    23-09-2013  V1.4.0
+
+- ADCLib            Change default SDK to Colibri600
+
+- CANLib-SJ1000     Change default SDK to Colibri600
+
+- CANLib-MCP2515    Change default SDK to Colibri600
+                    Workaround for Silicon Erratum that could lead to duplicated CAN messages (use RTS command to send messages)
+                    
+- CLKLib            Change default SDK to Colibri600
+                    Extend T30 support
+                    
+- CLOUDLib          Change default SDK to Colibri600
+                    
+- COPROCLib         Change default SDK to Colibri600
+                    
+- DMALIb            Change default SDK to Colibri600
+                    
+- FREQLib           Change default SDK to Colibri600
+                    
+- GPIOLib           Change default SDK to Colibri600
+                    Fix mapping of GPIO BB0
+                    
+- I2CLib            Change default SDK to Colibri600
+                    
+- IMGINFOLib        Change default SDK to Colibri600
+                    
+- INTLib            Change default SDK to Colibri600
+                    Replace OAL_INTR_FORCE_STATIC by OAL_INTR_TRANSLATE and added some fixes to allow reusing the same SysIntr IDs.
+                    
+- MAPREGLib         Change default SDK to Colibri600
+                    
+- MEMLib            Change default SDK to Colibri600
+                    
+- OVERLAYLib        Change default SDK to Colibri600
+                    
+- PWMLib            Change default SDK to Colibri600
+                    
+- SPIDMALib         Change default SDK to Colibri600
+                    Added support for T30's SPI5 and SPI6
+                    
+- SPILib            Change default SDK to Colibri600
+                    Added support for T30's SPI5 and SPI6
+                    
+- STOREMGRLib       Change default SDK to Colibri600
+                    
+- SYSINFOLib        Change default SDK to Colibri600
+                    
+- UPDATELib         Change default SDK to Colibri600
+                    Added support for Wiping the FlashDisk
+                    
+- WATCHDOGLib       Change default SDK to Colibri600
+
+
+12-08-2013  V1.3.0
+
+- CANLib-SJ1000     Added support for T30
+
+- CANLib-MCP2515    Changed MCP2515 Interrupt to be level triggered rather than edge triggered
+
+- FREQLib           Added functionality to get and set system clocks for Tegra processors
+
+- GPIOLib           Fixed GPIO Input enable issue on T30, Added support for Apalis family
+
+- INTLib            Fixed __GetUserKData() link error under WinCE5, changed scope of internal variables to be internal only
+
+- SPIDMALib         Improved performance of SPIReadWritePolling(), SPIReadPolling() and SPIWritePolling() on Tegra processors
+
+- SPILib            Improved performance of SPIReadWritePolling(), SPIReadPolling() and SPIWritePolling() on Tegra processors
+
+- SYSINFOLib        Fixed getSystemSpeeds() to output correct CPU Speed on Tegra processors
+
+- UPDATELib         Fixed issue with ClearRegistry() on Tegra on CE6/7
+
+
+24-06-2013  V1.2.0
+
+- INTLib:           Fixed __GetUserKData() link error under Windows CE 5 
+
+- ADCLib:           Added support for Colibri PXA300XT
+
+- CoProcLib:        Added support for Colibri PXA300XT
+
+- PWMLib:           Added parameter type definition to DeInitPWM()
+
+
+17-06-2013  V1.1.0:
+
+- CANLib-SJA1000:   Added CANReInitialise() to DLL Definition File
+
+- CoProcLib:        Updated to work with Apalis T30
+
+- GPIOLib:          Updated to work with Apalis T30
+
+- MapRegLib:        Updated to work with Apalis T30
+
+- PWMLib:           Updated to work with Apalis T30
+
+12-06-2013  V1.0.0:
+
+- First release as a consolidated library 

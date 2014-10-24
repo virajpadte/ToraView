@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntLibDemo", "IntLibDemo.vcproj", "{1B9D7949-1145-496A-A70C-268664A51840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Colibri (ARMV4I) = Debug|Colibri (ARMV4I)
+		Debug|Colibri600 (ARMV4I) = Debug|Colibri600 (ARMV4I)
+		Debug|Toradex_CE700 (ARMv4I) = Debug|Toradex_CE700 (ARMv4I)
+		Release|Colibri (ARMV4I) = Release|Colibri (ARMV4I)
+		Release|Colibri600 (ARMV4I) = Release|Colibri600 (ARMV4I)
+		Release|Toradex_CE700 (ARMv4I) = Release|Toradex_CE700 (ARMv4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Colibri (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Colibri (ARMV4I).Build.0 = Debug|Colibri (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Colibri (ARMV4I).Deploy.0 = Debug|Colibri (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Colibri600 (ARMV4I).Deploy.0 = Debug|Colibri600 (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Toradex_CE700 (ARMv4I).ActiveCfg = Debug|Toradex_CE700 (ARMv4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Toradex_CE700 (ARMv4I).Build.0 = Debug|Toradex_CE700 (ARMv4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Debug|Toradex_CE700 (ARMv4I).Deploy.0 = Debug|Toradex_CE700 (ARMv4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Colibri (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Colibri (ARMV4I).Build.0 = Release|Colibri (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Colibri (ARMV4I).Deploy.0 = Release|Colibri (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Colibri600 (ARMV4I).Deploy.0 = Release|Colibri600 (ARMV4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Toradex_CE700 (ARMv4I).ActiveCfg = Release|Toradex_CE700 (ARMv4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Toradex_CE700 (ARMv4I).Build.0 = Release|Toradex_CE700 (ARMv4I)
+		{1B9D7949-1145-496A-A70C-268664A51840}.Release|Toradex_CE700 (ARMv4I).Deploy.0 = Release|Toradex_CE700 (ARMv4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

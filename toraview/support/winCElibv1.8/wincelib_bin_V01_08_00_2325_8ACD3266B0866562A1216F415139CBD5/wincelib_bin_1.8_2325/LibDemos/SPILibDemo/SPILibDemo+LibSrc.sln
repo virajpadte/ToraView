@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SPILib_Dll", "..\..\libs\prj\SPILib\SPILib_Dll.vcproj", "{56ED5F5A-3792-4506-A36C-C737AC3C501D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7843763D-79BA-4686-8490-31B774CD99F1} = {7843763D-79BA-4686-8490-31B774CD99F1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SPILib_Lib", "..\..\libs\prj\SPILib\SPILib_Lib.vcproj", "{7843763D-79BA-4686-8490-31B774CD99F1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpiLibDemo_Lib", "SPILibDemo_Lib.vcproj", "{EF68B871-B200-493A-A478-DC07EBEE303E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7843763D-79BA-4686-8490-31B774CD99F1} = {7843763D-79BA-4686-8490-31B774CD99F1}
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D} = {56ED5F5A-3792-4506-A36C-C737AC3C501D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Colibri (ARMV4I) = Debug|Colibri (ARMV4I)
+		Debug|Colibri600 (ARMV4I) = Debug|Colibri600 (ARMV4I)
+		Debug|Windows Mobile 5.0 Pocket PC SDK (ARMV4I) = Debug|Windows Mobile 5.0 Pocket PC SDK (ARMV4I)
+		Debug|Windows Mobile 5.0 Smartphone SDK (ARMV4I) = Debug|Windows Mobile 5.0 Smartphone SDK (ARMV4I)
+		Release|Colibri (ARMV4I) = Release|Colibri (ARMV4I)
+		Release|Colibri600 (ARMV4I) = Release|Colibri600 (ARMV4I)
+		Release|Windows Mobile 5.0 Pocket PC SDK (ARMV4I) = Release|Windows Mobile 5.0 Pocket PC SDK (ARMV4I)
+		Release|Windows Mobile 5.0 Smartphone SDK (ARMV4I) = Release|Windows Mobile 5.0 Smartphone SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Debug|Colibri (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Debug|Colibri (ARMV4I).Build.0 = Debug|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Debug|Colibri (ARMV4I).Deploy.0 = Debug|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Debug|Windows Mobile 5.0 Pocket PC SDK (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Debug|Windows Mobile 5.0 Smartphone SDK (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Release|Colibri (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Release|Colibri (ARMV4I).Build.0 = Release|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Release|Colibri (ARMV4I).Deploy.0 = Release|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Release|Windows Mobile 5.0 Pocket PC SDK (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{56ED5F5A-3792-4506-A36C-C737AC3C501D}.Release|Windows Mobile 5.0 Smartphone SDK (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Debug|Colibri (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Debug|Colibri (ARMV4I).Build.0 = Debug|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Debug|Colibri (ARMV4I).Deploy.0 = Debug|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Debug|Windows Mobile 5.0 Pocket PC SDK (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Debug|Windows Mobile 5.0 Smartphone SDK (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Release|Colibri (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Release|Colibri (ARMV4I).Build.0 = Release|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Release|Colibri (ARMV4I).Deploy.0 = Release|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Release|Windows Mobile 5.0 Pocket PC SDK (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{7843763D-79BA-4686-8490-31B774CD99F1}.Release|Windows Mobile 5.0 Smartphone SDK (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Colibri (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Colibri (ARMV4I).Build.0 = Debug|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Colibri (ARMV4I).Deploy.0 = Debug|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Colibri600 (ARMV4I).ActiveCfg = Debug|Colibri600 (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Colibri600 (ARMV4I).Build.0 = Debug|Colibri600 (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Colibri600 (ARMV4I).Deploy.0 = Debug|Colibri600 (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Windows Mobile 5.0 Pocket PC SDK (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Debug|Windows Mobile 5.0 Smartphone SDK (ARMV4I).ActiveCfg = Debug|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Colibri (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Colibri (ARMV4I).Build.0 = Release|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Colibri (ARMV4I).Deploy.0 = Release|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Colibri600 (ARMV4I).ActiveCfg = Release|Colibri600 (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Colibri600 (ARMV4I).Build.0 = Release|Colibri600 (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Colibri600 (ARMV4I).Deploy.0 = Release|Colibri600 (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Windows Mobile 5.0 Pocket PC SDK (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+		{EF68B871-B200-493A-A478-DC07EBEE303E}.Release|Windows Mobile 5.0 Smartphone SDK (ARMV4I).ActiveCfg = Release|Colibri (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
