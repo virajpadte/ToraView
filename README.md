@@ -1,0 +1,1 @@
+This is a revolutionary graphical programming interface for Toradex boards. It has been built using LabVIEW 2011. The attempt is to make LabVIEW compatible DLL's and then later LabVIEW VI toolbox
